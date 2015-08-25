@@ -12,6 +12,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" id="PbZ-oZ-WKO">
+                                <rect key="frame" x="0.0" y="199" width="320" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="track2.png" id="12u-QO-cFi">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                             <view contentMode="scaleToFill" id="nHn-eu-UMw">
                                 <rect key="frame" x="60" y="147" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -24,37 +35,53 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="1QZ-an-GUb"/>
+                                            <action selector="touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="3PU-ft-dFw"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bubble.png" id="rXb-4U-pKT">
+                                        <rect key="frame" x="56" y="73" width="88" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="TUQ-h3-iJu" appends="YES" id="57j-SY-nRM"/>
                                 </connections>
                             </view>
+                            <view contentMode="scaleToFill" id="xtF-e2-R9j">
+                                <rect key="frame" x="92" y="120" width="137" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="bubbleImage" destination="rXb-4U-pKT" id="rJm-VX-rRK"/>
+                        <outlet property="bubbleView" destination="xtF-e2-R9j" id="DQn-Ng-cl2"/>
                         <outlet property="imageButton" destination="ccI-yg-FFM" id="HwW-3Q-kg1"/>
+                        <outlet property="panGesture" destination="TUQ-h3-iJu" id="1kZ-mS-wLG"/>
                         <outlet property="photoView" destination="kh9-bI-dsS" id="gPR-Rh-HIl"/>
                         <outlet property="photoViewReally" destination="nHn-eu-UMw" id="7ku-tM-aco"/>
+                        <outlet property="trackImage" destination="12u-QO-cFi" id="rKc-Du-WWg"/>
+                        <outlet property="trackView" destination="nHn-eu-UMw" id="ueP-I3-aPY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer cancelsTouchesInView="NO" delaysTouchesEnded="NO" minimumNumberOfTouches="1" id="TUQ-h3-iJu">
                     <connections>
-                        <action selector="handleGesture:" destination="vXZ-lx-hvc" id="pKx-8x-y2Q"/>
+                        <action selector="handleGesture:" destination="vXZ-lx-hvc" id="gQ3-x3-qrZ"/>
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="130.66666666666666" y="319.02666666666664"/>
+            <point key="canvasLocation" x="130" y="319"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Bubble.png" width="160" height="98"/>
         <image name="pear-apple-oatmeal-2.jpg" width="480" height="480"/>
+        <image name="track2.png" width="750" height="160"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
