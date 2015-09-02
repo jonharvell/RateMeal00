@@ -22,18 +22,30 @@ class ViewController: UIViewController {
     var animator : UIDynamicAnimator!
     var attachmentBehavior : UIAttachmentBehavior!
     var attachmentBehaviorD : UIAttachmentBehavior!
+    var snapBehavior : UISnapBehavior!
 
     var gravityBehavior : UIGravityBehavior!
     let tapRec = UITapGestureRecognizer()
+    
+    var data = getData()
+    var number = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        bubbleImage.alpha = 0
-        trackImage.alpha = 0
         let scale = CGAffineTransformMakeScale(1.5, 1.5)
         let translate = CGAffineTransformMakeTranslation(0, 0)
         photoViewReally.transform = CGAffineTransformConcat(scale, translate)
+
+        
+        animator = UIDynamicAnimator(referenceView: photoView)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        imageButton.setImage(UIImage(named: data[number]["image"]!), forState: UIControlState.Normal)
+        
+        bubbleImage.alpha = 0
+        trackImage.alpha = 0
+        photoViewReally.alpha = 1
         
         spring(0.5) {
             let scale = CGAffineTransformMakeScale(1, 1)
@@ -41,48 +53,28 @@ class ViewController: UIViewController {
             self.photoViewReally.transform = CGAffineTransformConcat(scale, translate)
         }
         
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        animator = UIDynamicAnimator(referenceView: photoView)
+        spring(0.5) {
+            self.imageButton.frame = CGRectMake(0, 0, 200, 200)
+        }
+
     }
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
-        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func touchDown(sender: AnyObject) {
-            let scale = CGAffineTransformMakeScale(1, 1)
-            let translate = CGAffineTransformMakeTranslation(0, 0)
-            imageButton.transform = CGAffineTransformConcat(scale, translate)
+        let scale = CGAffineTransformMakeScale(1, 1)
+        let translate = CGAffineTransformMakeTranslation(0, 0)
+        imageButton.transform = CGAffineTransformConcat(scale, translate)
             
-            spring(0.5) {
-                let scale = CGAffineTransformMakeScale(0.5, 0.5)
-                let translate = CGAffineTransformMakeTranslation(0, 0)
-                self.imageButton.transform = CGAffineTransformConcat(scale, translate)
-                self.trackImage.alpha = 1
-
-            }
+        spring(0.5) {
+            let scale = CGAffineTransformMakeScale(0.5, 0.5)
+            let translate = CGAffineTransformMakeTranslation(0, 0)
+            self.imageButton.transform = CGAffineTransformConcat(scale, translate)
+            self.trackImage.alpha = 1
         }
-    
-
-//    @IBAction func touchDown(sender: AnyObject) {
-//        let locationA = sender.locationInView(imageButton)
-//        
-//        spring(0.5) {
-//            self.imageButton.frame = CGRectMake(0, 0, 80, 80)
-//    }
-//        
-//        if sender.state == .Began {
-//        let centerOffset = UIOffsetMake(locationA.x - CGRectGetMidX(self.imageButton.bounds), locationA.y - CGRectGetMidY(self.imageButton.bounds))
-//        attachmentBehavior = UIAttachmentBehavior(item: self.imageButton, offsetFromCenter: centerOffset, attachedToAnchor: locationA)
-//        attachmentBehavior.frequency = 0
-//        }
-//        
-//        animator.addBehavior(attachmentBehavior)
-//    }
+    }
     
     @IBOutlet var panGesture: UIPanGestureRecognizer!
     
@@ -92,13 +84,10 @@ class ViewController: UIViewController {
         myView.center = location
         let boxLocation = sender.locationInView(myView)
        
-
-        
         if sender.state == UIGestureRecognizerState.Began {
             
-             let translate = CGAffineTransformMakeTranslation(0, -80)
-             let scale = CGAffineTransformMakeScale(1, 1)
-
+            let translate = CGAffineTransformMakeTranslation(0, -80)
+            let scale = CGAffineTransformMakeScale(1, 1)
             
             let centerOffset = UIOffsetMake(boxLocation.x - CGRectGetMidX(self.imageButton.bounds), boxLocation.y - CGRectGetMidY(self.imageButton.bounds))
             attachmentBehavior = UIAttachmentBehavior(item: self.imageButton, offsetFromCenter: centerOffset, attachedToAnchor: location)
@@ -110,25 +99,17 @@ class ViewController: UIViewController {
             
             attachmentBehavior.frequency = 0
 
-            
             animator.addBehavior(attachmentBehavior)
-
-            
-            
             
         }
             
         else if sender.state == UIGestureRecognizerState.Changed {
             attachmentBehavior.anchorPoint = location
             
-    
-    
             spring(0.5) {
                 self.imageButton.frame = CGRectMake(boxLocation.x - CGRectGetMidX(self.imageButton.bounds), boxLocation.y - CGRectGetMidY(self.imageButton.bounds), 80, 80)
                 
                 self.bubbleView.frame = CGRectMake(boxLocation.x, boxLocation.y - CGRectGetMidY(self.imageButton.bounds), 137, 87)
-            
-            
             }
     
         }
@@ -138,9 +119,26 @@ class ViewController: UIViewController {
             spring(0.5) {
                 self.imageButton.frame = CGRectMake(boxLocation.x - CGRectGetMidX(self.imageButton.bounds), CGRectGetMidY(self.imageButton.bounds), 0, 0)
             }
-
+            
+            delay(0.3) {
+                self.refreshView()
+            }
+        }
+    }
+    
+    func refreshView() {
+        number++
+        if number > 3 {
+            number = 0
         }
         
+        animator.removeAllBehaviors()
+        
+        snapBehavior = UISnapBehavior(item: photoViewReally, snapToPoint: view.center)
+        attachmentBehavior.anchorPoint = view.center
+        
+        photoViewReally.center = view.center
+        viewDidAppear(true)
     }
 }
 

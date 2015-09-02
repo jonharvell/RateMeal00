@@ -7,18 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06243A221B97409300015BB8 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06243A1D1B97409300015BB8 /* BlurView.swift */; };
+		06243A231B97409300015BB8 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06243A1E1B97409300015BB8 /* Data.swift */; };
+		06243A241B97409300015BB8 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06243A1F1B97409300015BB8 /* DesignableView.swift */; };
+		06243A251B97409300015BB8 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06243A201B97409300015BB8 /* Misc.swift */; };
+		06243A261B97409300015BB8 /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06243A211B97409300015BB8 /* SpringAnimation.swift */; };
 		067CDE621B84CE28007812B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CDE611B84CE28007812B5 /* AppDelegate.swift */; };
 		067CDE641B84CE28007812B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CDE631B84CE28007812B5 /* ViewController.swift */; };
 		067CDE671B84CE28007812B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 067CDE651B84CE28007812B5 /* Main.storyboard */; };
 		067CDE691B84CE28007812B5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 067CDE681B84CE28007812B5 /* Images.xcassets */; };
 		067CDE6C1B84CE28007812B5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 067CDE6A1B84CE28007812B5 /* LaunchScreen.xib */; };
 		067CDE781B84CE28007812B5 /* RateMealScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CDE771B84CE28007812B5 /* RateMealScreenTests.swift */; };
-		067CDE821B84CF97007812B5 /* pear-apple-oatmeal-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 067CDE811B84CF97007812B5 /* pear-apple-oatmeal-2.jpg */; };
-		06F5B2F71B8C172A00AF2E66 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F5B2F21B8C172A00AF2E66 /* BlurView.swift */; };
-		06F5B2F81B8C172A00AF2E66 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F5B2F31B8C172A00AF2E66 /* Data.swift */; };
-		06F5B2F91B8C172A00AF2E66 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F5B2F41B8C172A00AF2E66 /* DesignableView.swift */; };
-		06F5B2FA1B8C172A00AF2E66 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F5B2F51B8C172A00AF2E66 /* Misc.swift */; };
-		06F5B2FB1B8C172A00AF2E66 /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F5B2F61B8C172A00AF2E66 /* SpringAnimation.swift */; };
 		06F5B2FE1B8CB35F00AF2E66 /* Bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 06F5B2FC1B8CB35F00AF2E66 /* Bubble.png */; };
 		06F5B2FF1B8CB35F00AF2E66 /* track2.png in Resources */ = {isa = PBXBuildFile; fileRef = 06F5B2FD1B8CB35F00AF2E66 /* track2.png */; };
 /* End PBXBuildFile section */
@@ -34,6 +33,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06243A1D1B97409300015BB8 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = "../../../../../Downloads/8-Data 2/ShotsApp/font/Spring/BlurView.swift"; sourceTree = "<group>"; };
+		06243A1E1B97409300015BB8 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Data.swift; path = "../../../../../Downloads/8-Data 2/ShotsApp/font/Spring/Data.swift"; sourceTree = "<group>"; };
+		06243A1F1B97409300015BB8 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DesignableView.swift; path = "../../../../../Downloads/8-Data 2/ShotsApp/font/Spring/DesignableView.swift"; sourceTree = "<group>"; };
+		06243A201B97409300015BB8 /* Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Misc.swift; path = "../../../../../Downloads/8-Data 2/ShotsApp/font/Spring/Misc.swift"; sourceTree = "<group>"; };
+		06243A211B97409300015BB8 /* SpringAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpringAnimation.swift; path = "../../../../../Downloads/8-Data 2/ShotsApp/font/Spring/SpringAnimation.swift"; sourceTree = "<group>"; };
 		067CDE5C1B84CE28007812B5 /* RateMealScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RateMealScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		067CDE601B84CE28007812B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		067CDE611B84CE28007812B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,12 +48,6 @@
 		067CDE711B84CE28007812B5 /* RateMealScreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RateMealScreenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		067CDE761B84CE28007812B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		067CDE771B84CE28007812B5 /* RateMealScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateMealScreenTests.swift; sourceTree = "<group>"; };
-		067CDE811B84CF97007812B5 /* pear-apple-oatmeal-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "pear-apple-oatmeal-2.jpg"; path = "../../pear-apple-oatmeal-2.jpg"; sourceTree = "<group>"; };
-		06F5B2F21B8C172A00AF2E66 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = "../../../../Downloads/8-Data 2/ShotsApp/font/Spring/BlurView.swift"; sourceTree = "<group>"; };
-		06F5B2F31B8C172A00AF2E66 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Data.swift; path = "../../../../Downloads/8-Data 2/ShotsApp/font/Spring/Data.swift"; sourceTree = "<group>"; };
-		06F5B2F41B8C172A00AF2E66 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DesignableView.swift; path = "../../../../Downloads/8-Data 2/ShotsApp/font/Spring/DesignableView.swift"; sourceTree = "<group>"; };
-		06F5B2F51B8C172A00AF2E66 /* Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Misc.swift; path = "../../../../Downloads/8-Data 2/ShotsApp/font/Spring/Misc.swift"; sourceTree = "<group>"; };
-		06F5B2F61B8C172A00AF2E66 /* SpringAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpringAnimation.swift; path = "../../../../Downloads/8-Data 2/ShotsApp/font/Spring/SpringAnimation.swift"; sourceTree = "<group>"; };
 		06F5B2FC1B8CB35F00AF2E66 /* Bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Bubble.png; path = ../../Bubble.png; sourceTree = "<group>"; };
 		06F5B2FD1B8CB35F00AF2E66 /* track2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = track2.png; path = ../../track2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,16 +91,15 @@
 		067CDE5E1B84CE28007812B5 /* RateMealScreen */ = {
 			isa = PBXGroup;
 			children = (
+				06243A1D1B97409300015BB8 /* BlurView.swift */,
+				06243A1E1B97409300015BB8 /* Data.swift */,
+				06243A1F1B97409300015BB8 /* DesignableView.swift */,
+				06243A201B97409300015BB8 /* Misc.swift */,
+				06243A211B97409300015BB8 /* SpringAnimation.swift */,
 				067CDE611B84CE28007812B5 /* AppDelegate.swift */,
-				06F5B2F21B8C172A00AF2E66 /* BlurView.swift */,
-				06F5B2F31B8C172A00AF2E66 /* Data.swift */,
-				06F5B2F41B8C172A00AF2E66 /* DesignableView.swift */,
-				06F5B2F51B8C172A00AF2E66 /* Misc.swift */,
-				06F5B2F61B8C172A00AF2E66 /* SpringAnimation.swift */,
 				067CDE631B84CE28007812B5 /* ViewController.swift */,
 				067CDE651B84CE28007812B5 /* Main.storyboard */,
 				067CDE681B84CE28007812B5 /* Images.xcassets */,
-				067CDE811B84CF97007812B5 /* pear-apple-oatmeal-2.jpg */,
 				067CDE6A1B84CE28007812B5 /* LaunchScreen.xib */,
 				06F5B2FC1B8CB35F00AF2E66 /* Bubble.png */,
 				06F5B2FD1B8CB35F00AF2E66 /* track2.png */,
@@ -218,7 +215,6 @@
 			files = (
 				067CDE671B84CE28007812B5 /* Main.storyboard in Resources */,
 				06F5B2FE1B8CB35F00AF2E66 /* Bubble.png in Resources */,
-				067CDE821B84CF97007812B5 /* pear-apple-oatmeal-2.jpg in Resources */,
 				067CDE6C1B84CE28007812B5 /* LaunchScreen.xib in Resources */,
 				06F5B2FF1B8CB35F00AF2E66 /* track2.png in Resources */,
 				067CDE691B84CE28007812B5 /* Images.xcassets in Resources */,
@@ -241,11 +237,11 @@
 			files = (
 				067CDE641B84CE28007812B5 /* ViewController.swift in Sources */,
 				067CDE621B84CE28007812B5 /* AppDelegate.swift in Sources */,
-				06F5B2F71B8C172A00AF2E66 /* BlurView.swift in Sources */,
-				06F5B2FA1B8C172A00AF2E66 /* Misc.swift in Sources */,
-				06F5B2FB1B8C172A00AF2E66 /* SpringAnimation.swift in Sources */,
-				06F5B2F91B8C172A00AF2E66 /* DesignableView.swift in Sources */,
-				06F5B2F81B8C172A00AF2E66 /* Data.swift in Sources */,
+				06243A221B97409300015BB8 /* BlurView.swift in Sources */,
+				06243A251B97409300015BB8 /* Misc.swift in Sources */,
+				06243A261B97409300015BB8 /* SpringAnimation.swift in Sources */,
+				06243A241B97409300015BB8 /* DesignableView.swift in Sources */,
+				06243A231B97409300015BB8 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

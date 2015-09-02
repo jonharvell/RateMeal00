@@ -31,7 +31,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
-                                        <state key="normal" image="pear-apple-oatmeal-2.jpg">
+                                        <state key="normal">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -80,7 +80,6 @@
     </scenes>
     <resources>
         <image name="Bubble.png" width="160" height="98"/>
-        <image name="pear-apple-oatmeal-2.jpg" width="480" height="480"/>
         <image name="track2.png" width="750" height="160"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
