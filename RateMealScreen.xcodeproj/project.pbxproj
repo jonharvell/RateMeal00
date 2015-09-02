@@ -18,8 +18,6 @@
 		067CDE691B84CE28007812B5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 067CDE681B84CE28007812B5 /* Images.xcassets */; };
 		067CDE6C1B84CE28007812B5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 067CDE6A1B84CE28007812B5 /* LaunchScreen.xib */; };
 		067CDE781B84CE28007812B5 /* RateMealScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067CDE771B84CE28007812B5 /* RateMealScreenTests.swift */; };
-		06F5B2FE1B8CB35F00AF2E66 /* Bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 06F5B2FC1B8CB35F00AF2E66 /* Bubble.png */; };
-		06F5B2FF1B8CB35F00AF2E66 /* track2.png in Resources */ = {isa = PBXBuildFile; fileRef = 06F5B2FD1B8CB35F00AF2E66 /* track2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +46,6 @@
 		067CDE711B84CE28007812B5 /* RateMealScreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RateMealScreenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		067CDE761B84CE28007812B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		067CDE771B84CE28007812B5 /* RateMealScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateMealScreenTests.swift; sourceTree = "<group>"; };
-		06F5B2FC1B8CB35F00AF2E66 /* Bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Bubble.png; path = ../../Bubble.png; sourceTree = "<group>"; };
-		06F5B2FD1B8CB35F00AF2E66 /* track2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = track2.png; path = ../../track2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +97,6 @@
 				067CDE651B84CE28007812B5 /* Main.storyboard */,
 				067CDE681B84CE28007812B5 /* Images.xcassets */,
 				067CDE6A1B84CE28007812B5 /* LaunchScreen.xib */,
-				06F5B2FC1B8CB35F00AF2E66 /* Bubble.png */,
-				06F5B2FD1B8CB35F00AF2E66 /* track2.png */,
 				067CDE5F1B84CE28007812B5 /* Supporting Files */,
 			);
 			path = RateMealScreen;
@@ -214,9 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				067CDE671B84CE28007812B5 /* Main.storyboard in Resources */,
-				06F5B2FE1B8CB35F00AF2E66 /* Bubble.png in Resources */,
 				067CDE6C1B84CE28007812B5 /* LaunchScreen.xib in Resources */,
-				06F5B2FF1B8CB35F00AF2E66 /* track2.png in Resources */,
 				067CDE691B84CE28007812B5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
